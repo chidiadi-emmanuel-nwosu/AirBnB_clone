@@ -159,7 +159,9 @@ class HBNBCommand(cmd.Cmd):
                         for i in range(2, len(args), 2):
                             setattr(self.objs[key], args[i], args[i + 1])
                     else:
-                        setattr(self.objs[key], args[2].strip('"'), args[3].strip('"'))
+                        args[2] = args[2].strip('"')
+                        args[3] = args[3].strip('"')
+                        setattr(self.objs[key], args[2], args[3])
                     self.objs[key].save()
                 else:
                     print("""** no instance found **""")
