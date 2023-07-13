@@ -2,7 +2,7 @@
 
 Step 1: Let's Build a Command Interpreter to Manage Our AirBnB Objects!
 
- As aspiring developers, we (Chiadi Nwosu and Ibinabo Adiela) are about to take our first big step towards building a full-fledged web application. This initial phase is incredibly important because the components we develop here will be the foundation for all future projects, including HTML/CSS templating, database storage, API integration, and front-end development.
+ As aspiring developers, we (Chidiadi Nwosu and Ibinabo Adiela) are about to take our first big step towards building a full-fledged web application. This initial phase is incredibly important because the components we develop here will be the foundation for all future projects, including HTML/CSS templating, database storage, API integration, and front-end development.
 
 Throughout this project, we will achieve the following objectives, which are interconnected and essential to our success:
 
