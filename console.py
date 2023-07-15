@@ -86,17 +86,17 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         else:
             args = line.split()
-            if len(args) < 2:
+
+            if args[0] not in self.classes.keys():
+                print("** class doesn't exist **")
+            elif len(args) < 2:
                 print("** instance id missing **")
             else:
-                if args[0] not in self.classes.keys():
-                    print("** class doesn't exist **")
+                key = f"{args[0]}.{args[1]}"
+                if key in self.objs.keys():
+                    print(self.objs[key])
                 else:
-                    key = f"{args[0]}.{args[1]}"
-                    if key in self.objs.keys():
-                        print(self.objs[key])
-                    else:
-                        print("** no instance found **")
+                    print("** no instance found **")
 
     def do_destroy(self, line):
         """
@@ -108,17 +108,17 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         else:
             args = line.split()
-            if len(args) < 2:
+
+            if args[0] not in self.classes.keys():
+                print("** class doesn't exist **")
+            elif len(args) < 2:
                 print("** instance id missing **")
             else:
-                if args[0] not in self.classes.keys():
-                    print("** class doesn't exist **")
+                key = f"{args[0]}.{args[1]}"
+                if key in self.objs.keys():
+                    del self.objs[key]
                 else:
-                    key = f"{args[0]}.{args[1]}"
-                    if key in self.objs.keys():
-                        del self.objs[key]
-                    else:
-                        print("** no instance found **")
+                    print("** no instance found **")
 
     def do_all(self, line):
         """
