@@ -3,8 +3,8 @@
     base_model Module
 """
 import uuid
-from datetime import datetime
 from models import storage
+from datetime import datetime
 
 
 class BaseModel:
