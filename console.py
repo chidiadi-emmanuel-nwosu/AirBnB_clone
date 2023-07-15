@@ -129,8 +129,7 @@ class HBNBCommand(cmd.Cmd):
         list_str = []
         if not line:
             list_str = [obj.__str__() for obj in self.objs.values()]
-            if list_str:
-                print(list_str)
+            print(list_str)
         else:
             if line not in self.classes.keys():
                 print("** class doesn't exist **")
@@ -139,8 +138,7 @@ class HBNBCommand(cmd.Cmd):
                         obj.__str__() for obj in self.objs.values()
                         if obj.__class__.__name__ == line
                         ]
-                if list_str:
-                    print(list_str)
+                print(list_str)
 
     def do_update(self, line):
         """
@@ -166,15 +164,15 @@ class HBNBCommand(cmd.Cmd):
                         setattr(self.objs[key], args[2], args[3])
                     self.objs[key].save()
                 else:
-                    print("""** no instance found **""")
+                    print("** no instance found **")
         elif len(args) == 3:
             print("** value missing **")
         elif len(args) == 2:
             print("** attribute name missing **")
         elif len(args) == 1:
-            print("""** instance id missing **""")
+            print("** instance id missing **")
         else:
-            print("""** class name missing **""")
+            print("** class name missing **")
 
         self.check_dict = 0
 
