@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    user Module
+    State Module
 """
 from models.base_model import BaseModel
 
