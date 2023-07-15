@@ -43,5 +43,6 @@ class TestConsole(unittest.TestCase):
         """
         self.assertIsNone(self.console.onecmd(''))
 
+
 if __name__ == '__main__':
     unittest.main()
