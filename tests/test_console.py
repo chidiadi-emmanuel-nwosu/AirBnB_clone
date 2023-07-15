@@ -2,10 +2,10 @@
 """
 This module contains unit tests for the console.py file.
 """
-
 import unittest
 from io import StringIO
 from console import HBNBCommand
+
 
 class TestConsole(unittest.TestCase):
     """
