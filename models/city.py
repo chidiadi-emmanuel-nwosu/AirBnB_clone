@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    user Module
+    City Module
 """
 from models.base_model import BaseModel
 
