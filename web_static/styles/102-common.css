@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header,
+  .footer {
+    padding: 5px;
+  }
+}
+
+/* Responsive styles for small screens (e.g., tablets) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .header,
+  .footer {
+    padding: 8px;
+  }
+}
+
+/* Responsive styles for medium-sized screens (e.g., small laptops) */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 25px;
+  }
+
+  .header,
+  .footer {
+    padding: 12px;
+  }
+}
